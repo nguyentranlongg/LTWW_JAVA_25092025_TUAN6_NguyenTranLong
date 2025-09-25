@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Bean Address -->
+    <bean id="addressBean" class="iuh.fit.se.ltwww_java_25092025_tuan06_nguyentranlong.Address">
+        <constructor-arg value="HCM" />
+        <constructor-arg value="HCM City" />
+        <constructor-arg value="Vietnam" />
+    </bean>
+
+    <!-- Bean Employee -->
+    <bean id="employeeBean" class="iuh.fit.se.ltwww_java_25092025_tuan06_nguyentranlong.Employee">
+        <constructor-arg value="1" />
+        <constructor-arg value="Nguyen Van A" />
+        <constructor-arg ref="addressBean" />
+    </bean>
+
+</beans>
